@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Raleway", sans-serif; */
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.parent {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 1rem;
+}
+
+.parent .container {
+  max-width: 900px;
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.parent .container .card {
+  max-width: 300px;
+  width: 100%;
+  min-width: 250px;
+  color: #fff;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem; /* 25.6px */
+}
+
+.parent .container .card:first-of-type {
+  background-color: #e38525;
+}
+
+.parent .container .card:nth-of-type(2) {
+  background-color: #016871;
+}
+
+.parent .container .card:last-of-type {
+  background-color: #003f3e;
+}
+
+.parent .container .card .icon {
+  position: relative;
+  z-index: 1;
+}
+
+.parent .container .card .icon i {
+  font-size: 2rem;
+}
+
+.parent .container .card .icon::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: -9px;
+  left: -20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.parent .container .card:first-of-type .icon::before {
+  background-color: #b45a00;
+}
+
+.parent .container .card:nth-of-type(2) .icon::before {
+  background-color: #134347;
+}
+
+.parent .container .card:last-of-type .icon::before {
+  background-color: #0a8381;
+}
+
+.container .card h2 {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.container .card p {
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.container .card button {
+  font-family: "Raleway", sans-serif;
+  width: fit-content;
+  padding: 0.9rem 2rem;
+  border: 0;
+  border-radius: 5rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.parent .container .card:first-of-type button {
+  color: #e38525;
+}
+
+.parent .container .card:nth-of-type(2) button {
+  color: #0a8381;
+}
+
+.parent .container .card:last-of-type button {
+  color: #134347;
+}
